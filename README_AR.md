@@ -22,8 +22,8 @@ https://link.springer.com/book/10.1007/978-1-4842-0076-6
 - لو أنت شغال في team هتقدر تعرف مين اللي كتب الكود وامتي وعدد الاسطر اللي كتابها والملفات اللي عدل عليها يعني مفيش حد هيتهم الثاني هو اللي كتب كود مش بتاعه
 - كل واحد من ال team بيبقي ليه تاسك في ال project وبعد ما بينتهي منه بتعمل دمح في ال branch الرئيسية
 - بمجرد ما تنتهي من ال task اللي أنت وأخدها بترفعه علي ال server سواء كان 
-<a href="www.github.com" target="_blank">Github</a> أو <a href="www.gitlab.com" target="_blank">Gitlab</a>أو 
-<a href="www.bitbucket.org" target="_blank">bitbucket</a>
+[github](https://www.github.com/) أو [gitlab](https://www.gitlab.com/)أو 
+[bitbucket](https://www.bitbucket.org/)
 
 [رابط تحميل البرنامج](https://git-scm.com/download/win/)
 

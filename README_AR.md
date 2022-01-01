@@ -25,8 +25,7 @@ https://link.springer.com/book/10.1007/978-1-4842-0076-6
 <a href="www.github.com" target="_blank">Github</a> أو <a href="www.gitlab.com" target="_blank">Gitlab</a>أو 
 <a href="www.bitbucket.org" target="_blank">bitbucket</a>
 
-رابط تحميل البرنامج
-https://git-scm.com/download/win 
+[رابط تحميل البرنامج](https://git-scm.com/download/win/)
 
 
 

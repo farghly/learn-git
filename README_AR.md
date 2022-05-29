@@ -68,7 +68,7 @@ git config --global user.name "Your_UserName"
 
 إمتي أستخدم ال local configuration لو أنت عايز تعمل الإعدادت علي المشروع الحالي فقط يعني مثال أنت عايز تدخل بالايميل واسم المستخدم اللي أنت شغال بيه في الشركة
 
-git config  user.email you@example.com"
+git config  user.email "you@example.com"
 
 git config  user.name "Your_UserName"
 

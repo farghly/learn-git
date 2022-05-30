@@ -4,7 +4,7 @@
 - [Add files](#Add-files)
 - [Make configuraion](#Make-configuration)
 - [Make first commit](#Make-first-commit)
-- [Push repository to github](Push-repository-to-github)
+- [Push repository to github](#Push-repository-to-github)
 
 ## Introduction
 

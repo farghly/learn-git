@@ -3,7 +3,7 @@
 - [Make first project](#Make-first-project)
 - [Add files](#Add-files)
 - [Make configuraion](#Make-configuration)
-- [Make first commit](#Make-first-commit
+- [Make first commit](#Make-first-commit)
 
 ## Introduction
 

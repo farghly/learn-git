@@ -67,6 +67,8 @@ git add index.html search.html
 git commit –m "Write_Your_Message"
 ```
 
+# Make configuration
+
 لما تيجي تعمل commit هيظهرلك الرسالة ده
 
 ```bash

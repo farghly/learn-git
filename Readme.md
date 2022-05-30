@@ -1,7 +1,7 @@
 ## Table of contents
-- [Introduction] #Introduction
-- [Make first project] #Make-first-project
-- [Add files] #Add-files
+- [Introduction] (#Introduction)
+- [Make first project] (#Make-first-project)
+- [Add files] (#Add-files)
 
 ## Introduction
 

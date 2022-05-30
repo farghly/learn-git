@@ -73,7 +73,7 @@ fatal: unable to auto-detect email address
 وهنا هنقسم إعدادات ال 𝐠𝐢𝐭 للاعدادات عامة𝐠𝐥𝐨𝐛𝐚𝐥 𝐜𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧  وإعدادات خاصة 𝐥𝐨𝐜𝐚𝐥 𝐜𝐨𝐧𝐟𝐢𝐠𝐮𝐫𝐚𝐭𝐢𝐨𝐧 
 ال global configuration بتطبق علي كل المشاريع اللي هتعملها بال  git 
 
-git config --global user.email "you@example.com"
+``git config --global user.email "you@example.com"``
 
 git config --global user.name "Your_UserName"
 

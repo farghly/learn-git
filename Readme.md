@@ -52,7 +52,7 @@ git init
 git init FolderName
 ```
 
-# Add files
+## Add files
 
 هبدأ اعمل انشاء لملفات المشروع وبعد ما أكتب الكود هضيف الملفات لل git وعلشان اضيف الملفات هكتب اسم الملف  اللي هضيفه علي سبيل المثال
 
@@ -72,7 +72,7 @@ git add index.html search.html
 git commit –m "Write_Your_Message"
 ```
 
-# Make configuration
+## Make configuration
 
 لما تيجي تعمل commit هيظهرلك الرسالة ده
 

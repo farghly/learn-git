@@ -3,6 +3,7 @@
 - [Make first project](#Make-first-project)
 - [Add files](#Add-files)
 - [Make configuraion](#Make-configuration)
+- [Make first commit](#Make-first-commit
 
 ## Introduction
 
@@ -104,7 +105,7 @@ git config  user.email "you@example.com"
 git config  user.name "Your_UserName"
 ```
 
-
+## Make first commit
 علشان أعمل حفظ للملفات في ال 𝐠𝐢𝐭 لازم أمر اعمل 𝐜𝐨𝐦𝐦𝐢𝐭  للملفات اللي ضيفتها + أني لازم أكتب رسالة معبرة عن الملفات اللي ضفتها أو عدلت عليها علي سبيل مثال 𝐚𝐝𝐝 𝐬𝐮𝐦 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧 يعني الامر في نهاية هيبقي بالشكل ده
 ```bash
 git commit –m "add sum function"

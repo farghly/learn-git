@@ -1,7 +1,7 @@
 ## Table of contents
-- [Introduction] (#Introduction)
-- [Make first project] (#Make-first-project)
-- [Add files] (#Add-files)
+- [Introduction](#Introduction)
+- [Make first project](#Make-first-project)
+- [Add files](#Add-files)
 
 ## Introduction
 
@@ -35,7 +35,7 @@
 
 [رابط تحميل البرنامج](https://git-scm.com/download/win/)
 
-# Make first project
+## Make first project
 إزاي نعمل أول 𝐩𝐫𝐨𝐣𝐞𝐜𝐭
 ك 𝐠𝐢𝐭 𝐩𝐫𝐨𝐣𝐞𝐜𝐭 يبقي أول أمر هتتعلمه
 

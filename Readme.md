@@ -2,6 +2,7 @@
 - [Introduction](#Introduction)
 - [Make first project](#Make-first-project)
 - [Add files](#Add-files)
+- [Make configuraion](#Make-configuration)
 
 ## Introduction
 

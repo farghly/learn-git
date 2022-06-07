@@ -147,11 +147,11 @@ git push origin master
 
 بعد ما كتب  الامر السابق هتحتاج تعمل تسجيل دخول علي ال github  من خلال المتصفح وهيظهرلك الصورة ده
 
-![SignIn screen](/img/login_screen.PNG)
+<img src="img/login_screen.PNG" height="300" width="300"/>
 
 أو ممكن تعمل تسجيل دخول علي طريق ال  𝙋𝙚𝙧𝙨𝙤𝙣𝙖𝙡 𝙖𝙘𝙘𝙚𝙨𝙨 𝙩𝙤𝙠𝙚𝙣 
 
-![SignIn screen](/img/personal_access_token.PNG)
+<img src="img/personal_access_token.PNG" height="300" width="300"/>
 
  بتروح علي موقع ال github وتعمل إنشاء لل personal access token بعد ما تدخل علي موقع ال github  بتروح علي 
  

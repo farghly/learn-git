@@ -5,9 +5,9 @@
 - [Make configuraion](#Make-configuration)
 - [Make first commit](#Make-first-commit)
 - [Push repository to github](#Push-repository-to-github)
-- [Pull changes from remote repository](#Pull-changes-for-remote-repository)
+- [Pull changes from remote repository](#Pull-changes-from-remote-repository)
 - [Clone repository](#clone-repository)
-- [Git status vs Git diff](#status-vs-diff)
+- [Git status vs Git diff](#git-status-vs-git-diff)
 
 ## Introduction
 
@@ -184,7 +184,7 @@ git clone https://github.com/userName/projectName.git
 git pull origin master
 ```
 
-## pull changes from remote repository
+## Pull changes from remote repository
 
 لو أنت شغال مع فريق عمل بتحتاج من وقت للتاني تسحب التعديلات اللي  حصلت علي ال remote repository 
 علشان اسحب التعديلات من ال ``remote repository`` يعني شكل الامر بيبقي بالشكل اللي أنت شايفه بس مكان ال ``branchName`` بتكتب اسم ال ``branch`` اللي هتسحب منها التعديلات
@@ -196,7 +196,7 @@ git pull origin branchName
 git pull origin master
 ```
 
-## git status vs git diff
+## Git status vs Git diff
 
 ال ``status``  جيه من اسمها بمعني الحالة يعني الحالة اللي عليها ال ``project`` حاليا يعني أنت ضفت ملفات جديدة عدلت علي ملفات مسحت ملفات بيجبلك كل الملفات اللي حصل عليها تغير 
 

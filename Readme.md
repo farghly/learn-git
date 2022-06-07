@@ -208,9 +208,13 @@ git status
 git status FolderName/
 ```
 أما ال ``git diff`` فال ``diff`` اختصار لكلمة ``difference`` وهي يعني ايه اللي الاختلاف اللي حصل علي الملفات وبيجبلك الكود اللي أنت أضفته أو مسحته
-``git diff``
+
+```bash
+git diff
+```
 
 ممكن أجيب الاختلاف اللي حصل علي ملف معين بكتب ``git diff``  وبكتب اسم الملف علي سبيل المثال
+
 ```bash
 git diff index.html
 ```

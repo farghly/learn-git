@@ -10,8 +10,10 @@
 - [Git status vs Git diff](#git-status-vs-git-diff)
 - [Git log](#git-log)
 - [Add changes to last commit](#add-changes-to-last-commit)
+- [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
+  - [Permission denied public key](#permission-denied-public-key)
 
 ## Introduction
 
@@ -281,6 +283,33 @@ git add index.html
 ```bash
 git commit –amend –no-edit
 ```
+## SSH protocol
+
+هو بروتوكول برسل  بيه وأستقبل بيه بيانات مشفرة البيانات اللي برسلها بيتفك تشفيرها  بال public key والبيانات اللي بستقبلها بيتفك تشفيرها بال ``private key`` 
+إزاي أعمل إنشاء لل ``public key``  وال ``private key``
+
+```bash
+ssh-keygen
+```
+ال keygen اختصار ل key generation  وهو إنشاء ال key بعد ما تكتب الأمر السابق ودوس ``Enter`` هيطلب منك اسم الملف احنا مش هنغير اسم الملف هنخلي الاسم الافتراضي بتاعه اللي هو ``id_rsa`` وبالتالي هدوس  ``Enter`` هيطلب منك تدخل الباسورد ممكن تدخل باسورد أو تسيب الباسورد فاضي وهدوس ``Enter``  وبكده هو عملك ``public key`` و ``private key``  
+هتاخد المحتوي اللي بداخل ال ``public key``  وتحطه علي ال ``server`` طيب أنا بعمل نسخ للمحتوي اللي بداخل ``public key`` إزاي من خلال الامر ده
+
+```bash
+cat id_rsa.pub |clip
+```
+ممكن ال server يكون github أو gitlab أو bitbucket علي حسب ما أنت شغال احنا هنا هنحط ال github بتفتح موقع ال github ومن ال
+
+``Settings -> SSH and GPG KEYS -> New SSH key``
+
+وهتضيف ال public key بعد ما ضفته بعمل اختبار ssh-key  بالأمر التالي
+```bash
+ssh –T git@github.com
+```
+المفروض بعد ما تكتب الأمر هيظهرلك الرسالة ده 
+```bash
+Hi UserName! You've successfully authenticated, but GitHub does not provide shell access.
+```
+وبكده أنت عملت اتصال لل github بنجاح عن طريق ال public key  وال private key بنجاح
 
 ## Errors
 

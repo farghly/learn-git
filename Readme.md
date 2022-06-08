@@ -11,6 +11,7 @@
 - [Git log](#git-log)
 - [Add changes to last commit](#add-changes-to-last-commit)
 - [Git reset](#git-reset)
+- [Git revert](#git-revert)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
@@ -267,9 +268,9 @@ git log –oneline
 ال ``git log`` فيها معلومات كتير جدا لو عايز معلومات أكتر اكتب الامر ده 
 
 ```bash
-git log help
+git help log
 ```
-وفي الامر ده بيعرضك  بيتفتحلك المتصفح بيعرضلك كل الأوامر الخاصة بال log  الموجودة في ال ``offline documentation``  لما بتعمل ``install`` لل ``git`` 
+وفي الامر ده بيتفتحلك المتصفح بيعرضلك كل الأوامر الخاصة بال log  الموجودة في ال ``offline documentation``   
 <br/>
 
 ## Add changes to last commit
@@ -310,6 +311,17 @@ git reset 8d80b64
 لو عايز أرجع خطوة واحدة فقط هكتب 
 ```bash
 git reset HEAD
+```
+
+## Git revert
+ 
+ لو عايز ترجع بمقدار خطوة بس عايز تحافظ علي ال commit اللي هتمسحه
+ نفترض أنك عندك ``commits`` الموجودة  **``A,B,C,D``** أنت عايز تمسح ال ``D`` بس بعد ما تمسحه تبقي محتفظ بال ``commit``  يبقي يجي دور ال ``revert`` في الحالة ال``commits``  بدلا ما كانوا أربعة هنضيف عليهم ``commit`` تاني هيبقي خمسة 
+**``A,B,C,D,E``**
+
+
+```bash
+git revert HEAD
 ```
 
 ## SSH protocol
@@ -409,7 +421,7 @@ git push --force origin master
 
 أو ممكن الخطأ يظهر لما نسمي الملف اسم غير الاسم الافتراضي ففي الحالة ده هننشأ ملف ونسميه config هتفتح ال git bash في مجلد .ssh وهتكتب الأمر التالي 
 ```bash
-Touch config
+ touch config
 ```
 وهتفتح ملف config وهتكتب فيه 
 ```bash

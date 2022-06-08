@@ -284,6 +284,7 @@ git add index.html
 git commit –amend –no-edit
 ```
 ## SSH protocol
+[لينك الفيديو](https://youtu.be/D9UZINTdvXU) 
 
 هو بروتوكول برسل  بيه وأستقبل بيه بيانات مشفرة البيانات اللي برسلها بيتفك تشفيرها  بال public key والبيانات اللي بستقبلها بيتفك تشفيرها بال ``private key`` 
 إزاي أعمل إنشاء لل ``public key``  وال ``private key``
@@ -369,4 +370,23 @@ git commit –-amend –-no-edit
 فلازم وأنت بتعمل push  تعمل إعادة كتابة علي commits يعني الأمر هيبقي بالشكل ده
 ```bash
 git push --force origin master
+```
+## Permission denied public key
+
+
+[لينك الفيديو](https://youtu.be/D9UZINTdvXU) 
+
+الخطأ بيحصل لما تعمل إعادة إنشاء لل private key فبيحصل تعارض بين public key الموجود علي ال Github وال private key  فالحل إحنا نأخذ ال public key ونحطه علي ال server 
+
+أو ممكن الخطأ يظهر لما نسمي الملف اسم غير الاسم الافتراضي ففي الحالة ده هننشأ ملف ونسميه config هتفتح ال git bash في مجلد .ssh وهتكتب الأمر التالي 
+```bash
+Touch config
+```
+وهتفتح ملف config وهتكتب فيه 
+```bash
+identityfile ~/.ssh/githubkey
+```
+وهتعمل حفظ وتقفل الملف وتعمل اتصال 
+```bash
+ssh –T git@github.com
 ```

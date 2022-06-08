@@ -9,6 +9,7 @@
 - [Clone repository](#clone-repository)
 - [Git status vs Git diff](#git-status-vs-git-diff)
 - [Git log](#git-log)
+- [Add changes to last commit](#add-changes-to-last-commit)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
 
@@ -266,6 +267,20 @@ git log –oneline
 git log help
 ```
 وفي الامر ده بيعرضك  بيتفتحلك المتصفح بيعرضلك كل الأوامر الخاصة بال log  الموجودة في ال ``offline documentation``  لما بتعمل ``install`` لل ``git`` 
+<br/>
+
+## Add changes to last commit
+
+<br/>
+
+لو أنت عايز تضيف تعديلات لأخر commit أنت عملته أولا أنت بتضيف الملف الأول 
+```bash
+git add index.html
+```
+بعد ما عملت إضافة للملف بتكتب الامر ده علشان تضيف التعديلات لاخر commit  أنت عملته
+```bash
+git commit –amend –no-edit
+```
 
 ## Errors
 

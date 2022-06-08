@@ -9,6 +9,8 @@
 - [Clone repository](#clone-repository)
 - [Git status vs Git diff](#git-status-vs-git-diff)
 - [Git log](#git-log)
+- [Errors messages and how to solve it](#errors)
+  - [Failed to push some refs](#failed-to-push-some-refs)
 
 ## Introduction
 
@@ -264,3 +266,63 @@ git log –oneline
 git log help
 ```
 وفي الامر ده بيعرضك  بيتفتحلك المتصفح بيعرضلك كل الأوامر الخاصة بال log  الموجودة في ال ``offline documentation``  لما بتعمل ``install`` لل ``git`` 
+
+## Errors
+
+<br/>
+
+### *Failed to push some refs*
+
+<br/>
+
+نص الرسالة بيبقي بالشكل ده
+
+<br/>
+
+```bash
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/farghly/learn-git.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+المشكلة ده بتحصل ليه 
+
+-	أولا لو أنت شغال مع فريق عمل يبقي أكيد في تعديلات أترفع لل repository فالمفروض  تسحب التعديلات أولا 
+
+```bash
+Git pull origin master
+```
+بعد ما سحبت التعديلات أعمل push
+
+```bash
+git push origin master
+```
+
+
+-	ثانيا أنت ممكن تكون غيرت الرسالة لل commit 
+
+```bash
+git commit --amend -m "Your_message" 
+```
+فلازم وأنت بتعمل push لو أنت شغال مع فريق عمل لازم تعمل  ``pull`` وتعمل  ``push``لو أنت بس اللي شغال علي المشروع هتكتفي بالأمر الثاني
+
+```bash
+git pull origin master
+```
+```bash
+git push --force origin master
+```
+
+-	ثالثا أنت ممكن عملت إضافة لملف وضفته لاخر ``commit message`` يعني ال ``commit`` بالشكل ده
+
+<br/>
+
+```bash
+git commit –-amend –-no-edit
+```
+فلازم وأنت بتعمل push  تعمل إعادة كتابة علي commits يعني الأمر هيبقي بالشكل ده
+```bash
+git push --force origin master
+```

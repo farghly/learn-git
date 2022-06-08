@@ -10,6 +10,7 @@
 - [Git status vs Git diff](#git-status-vs-git-diff)
 - [Git log](#git-log)
 - [Add changes to last commit](#add-changes-to-last-commit)
+- [Git reset](#git-reset)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
@@ -283,8 +284,36 @@ git add index.html
 ```bash
 git commit –amend –no-edit
 ```
+
+## Git reset
+
+لو عايز أعمل تراجع لحد commit  معين فهنا بيجي مهمة ال reset فال reset أنا بديله ال commit-id اللي أنا عايز ال head  يقف عنده علي سبيل المثال أنا هجيب ال log الاول 
+```bash
+git log –-oneline
+```
+بعد ما أنفذ الامر السابق النتيجة هتطلع بالشكل ده
+
+```bash
+3bcbedd (HEAD -> master, origin/master, origin/HEAD) Permission denied public key
+9eedf43 SSH protocol
+8d80b64 Add changes to last commit
+fe425ee Failed to push some refs
+b341e14 git log
+aa5a404 Update internal links
+56c6a5c update git diff
+```
+
+لو أنا عايز أعمل تراجع لحد ال commit اللي هو ال id رقمه 8d80b64 والرسالة Add changes to last commit هيكون الأمر كالتالي
+```bash
+git reset 8d80b64
+```
+لو عايز أرجع خطوة واحدة فقط هكتب 
+```bash
+git reset HEAD
+```
+
 ## SSH protocol
-[لينك الفيديو](https://youtu.be/D9UZINTdvXU) 
+**[لينك الفيديو](https://youtu.be/D9UZINTdvXU)** 
 
 هو بروتوكول برسل  بيه وأستقبل بيه بيانات مشفرة البيانات اللي برسلها بيتفك تشفيرها  بال public key والبيانات اللي بستقبلها بيتفك تشفيرها بال ``private key`` 
 إزاي أعمل إنشاء لل ``public key``  وال ``private key``
@@ -374,7 +403,7 @@ git push --force origin master
 ## Permission denied public key
 
 
-[لينك الفيديو](https://youtu.be/D9UZINTdvXU) 
+**[لينك الفيديو](https://youtu.be/D9UZINTdvXU)**
 
 الخطأ بيحصل لما تعمل إعادة إنشاء لل private key فبيحصل تعارض بين public key الموجود علي ال Github وال private key  فالحل إحنا نأخذ ال public key ونحطه علي ال server 
 

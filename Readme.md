@@ -361,6 +361,9 @@ git stash apply stash@{0}
 ```
 ده كان بالنسبة لل ``git stash``
 
+- **[Stackoverflow make more than one stash]( https://stackoverflow.com/q/17454235/5661396)**
+
+
 ## Git branch
 
 ال ``branch`` معناها الفرع زي الشجرة بالظبط فيه فرع رئيسي ومتفرع منه أكثر من فرع 

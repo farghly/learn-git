@@ -55,7 +55,7 @@
 [Github](https://www.github.com/) أو [Gitlab](https://www.gitlab.com/)أو 
 [Bitbucket](https://www.bitbucket.org/)
 
-[رابط تحميل البرنامج](https://git-scm.com/download/win/)
+[رابط تحميل برنامج ال git  ](https://git-scm.com/download/win/)
 
 ## Make first project
 إزاي نعمل أول``𝐩𝐫𝐨𝐣𝐞𝐜𝐭``

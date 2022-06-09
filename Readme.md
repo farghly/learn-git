@@ -12,6 +12,7 @@
 - [Add changes to last commit](#add-changes-to-last-commit)
 - [Git reset](#git-reset)
 - [Git revert](#git-revert)
+- [Git stash](#git-stash)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
@@ -327,6 +328,35 @@ git reset HEAD
 ```bash
 git revert HEAD
 ```
+## Git stash
+لو أنا عايز أحتفظ بالتعديلات اللي أنا عملتها حفظ مؤقت لحد ما أكمل عليها وأخلي ال ``branch`` عند أخر ``commit`` تجي مهمة ``git stash``  اللي بيحفظ التعديلات حفظ مؤقت لحد ما أكمل عليها  علشان أعمل كده بكتب الأمر التالي 
+
+```bash
+git stash
+```
+والأمر ده زي الأمر السابق بينفذ نفس المهمة
+```bash
+git stash push
+```
+لو عايز أسترجع التعديلات علشان أكمل عليها بكتب الأمر التالي
+```bash
+git stash pop
+```
+أنا عايز أظهر ``stash`` المتاحة عندي 
+```bash
+git stash list
+```
+ممكن أعمل أكثر من ``stash`` وأطبق واحد منهم في كل مرة علي سبيل المثال لو أنا عملت تعديل في الملف أول مرة وعملت ``git stash`` وجيت عملت تعديل في ملف أو أكتر من ملف في تاني وعملت ``git stash`` فهنا بيبقي عندي ``two stash`` علشان أظهرهم بكتب الأمر السابق والنتيجة هتبقي كالتالي
+
+```bash
+stash@{0}: WIP on master: eaf408c merge conflicts in a Git repository
+stash@{1}: WIP on master: eaf408c merge conflicts in a Git repository
+```
+علشان أنفذهم بأخد واحد منهم وأعمل ``add`` و ``commit`` وبعد كده أخد التاني
+```bash
+git stash apply stash@{0}
+```
+ده كان بالنسبة لل ``git stash``
 
 ## SSH protocol
 **[لينك الفيديو](https://youtu.be/D9UZINTdvXU)** 

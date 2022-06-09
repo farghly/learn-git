@@ -151,6 +151,8 @@ git commit –m "add sum function"
 
 <br/>
 
+- [github make new repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+
 هيوجهك إلي صفحة تاني بعدها بتكتب ``Repository name`` وتختار المشروع ``public`` أو ``private``
 
 ال ``public`` أي ``developer`` يقدر يشوفها

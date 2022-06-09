@@ -14,6 +14,7 @@
 - [Git revert](#git-revert)
 - [Git stash](#git-stash)
 - [Git branch](#git-branch)
+- [Git checkout](#git-checkout)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
@@ -379,6 +380,44 @@ git checkout –b New_branch
 لو أنا عايز أشوف كل ال branches الموجودة بكتب 
 ```bash
 git branch
+```
+## git checkout
+
+الأمر ليه ليه استخدامات عديدة يعني أنا ممكن أستخدمه علشان أجيب الملفات اللي عدلت عليها أو الملفات اللي مسحتها بالأمر التالي
+```bash
+git checkout
+```
+ممكن استخدمه علشان اتراجع عن التعديلات اللي عملتها في الملفات أو الملفات اللي مسحتها بس بشرط الملفات مكنش عملتها ``commit``
+```bash
+git checkout .
+```
+لو عايز أتراجع عن ملف بعينه
+```bash
+git checkout filename
+```
+لو عايز أشوف ال ``branch`` عند مرحلة معينة أو عند ``commit`` معين بكتب ``commit_id`` بعد ``git checkout`` علي سبيل المثال 
+```bash
+git checkout eaf408c
+```
+عايز أرجع لل ``branch`` 
+
+```bash
+git checkout branchName
+```
+
+لو عايز أشوف ``branch`` عند ``tag`` معين
+```bash
+git checkout tagName
+```
+
+لو أنت عايز أجيب ملف من ``branch`` تاني بكتب اسم ال ``branch`` اللي عايز اسحب منها الملف واسم الملف اللي عايز اجيبه 
+```bash
+git checkout branchName –- filename
+```
+لو الملف ده بداخل مجلد يبقي هتكتب اسم المجلد بعدها / وبعدها اسم الملف **``FolderName/FileName``**
+ 
+```bash
+git checkout branchName –- folderName/filename
 ```
 
 ## SSH protocol

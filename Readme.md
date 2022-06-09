@@ -14,6 +14,7 @@
 - [Git revert](#git-revert)
 - [Git stash](#git-stash)
 - [Git branch](#git-branch)
+- [Git merge](#git-merge)
 - [Git checkout](#git-checkout)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
@@ -381,6 +382,29 @@ git checkout –b New_branch
 ```bash
 git branch
 ```
+## git merge
+
+لو أنت عايز تعمل دمج  لاتنين برانش في برانش واحدة عندك برانش رئيسية ``master``  وبرانش فرعية ``dev`` 
+
+البرانش الفرعية عملت فيها  تعديلات وبعد ما عملت ``commit`` للتعديلات عايزه تضيفها للبرانش الرئيسية 
+
+أنت حاليا في برانش ال ``dev`` 
+
+هتعمل ``git checkout``  لبرانش ``master``
+```bash
+git checkout master
+```
+وهتكتب ``git merge`` وبعدها اسم ال ``branch`` اللي محتاج تعملها ``merge``
+```bash
+git merge dev
+```
+لو أنت عملت دمج  وعايز تتراجع عن الدمج بتكتب الامر التالي
+```bash
+git reset –merge ORIG_HEAD
+```
+- **[Stackoverflow undo merge]( https://stackoverflow.com/a/2389423/5661396)**
+
+
 ## git checkout
 
 الأمر ليه ليه استخدامات عديدة يعني أنا ممكن أستخدمه علشان أجيب الملفات اللي عدلت عليها أو الملفات اللي مسحتها بالأمر التالي

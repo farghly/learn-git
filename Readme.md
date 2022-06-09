@@ -200,10 +200,14 @@ git push https://github.com/userName/projectName.git master
 
 ## Clone repository
 
- ``git clone``  وظيفته بأخد نسخة من ال ``remote repository`` علي الجهاز زي النسخ واللصق علي الكمبيوتر أنا بنسخ المشروع الموجود علي ``github`` علي الجهاز 
+ وظيفته بأخد نسخة من ال ``remote repository`` علي الجهاز 
+ 
+ زي النسخ واللصق علي الكمبيوتر أنا بنسخ المشروع الموجود علي ``github`` علي الجهاز 
 ```bash
 git clone https://github.com/userName/projectName.git
 ```
+أنا بكتب ``git clone`` وبعدها رابط المشروع اللي عايز أعمله ``clone``
+
 وميزة ال clone هنا أني لو اتعمل أي تعديل علي ال remote repository   بقدر اسحب التعديل اللي اتعمل من خلال
 
 ```bash

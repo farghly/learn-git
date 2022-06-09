@@ -15,7 +15,7 @@
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
-  - [Refusing to merge unrelated histories git pull](#refusing-to-merge-unrelated-histories-git-pull)
+  - [Refusing to merge unrelated histories git pull](#refusing-to-merge-unrelated-histories)
   - [Permission denied public key](#permission-denied-public-key)
 
 ## Introduction
@@ -414,9 +414,12 @@ git commit –-amend –-no-edit
 git push --force origin master
 ```
 
-## Refusing to merge unrelated histories git pull
+## Refusing to merge unrelated histories
 
-المشكلة ده بتحصل لما يبقي عندك ``repository`` علي الكمبيوتر وعملت ``repository`` علي ال ``github`` وفي ال ``repository`` اللي علي ``github`` عملت إنشاء لملف أو أضفت ملف ال ``readme`` فهنا بيحصل تعارض وأنت بتعمل ``push`` ل ``repository`` علشان نحل المشكلة ده بعمل pull الأول  
+- [Stackoverflow problem link](https://stackoverflow.com/q/37937984/5661396)
+
+المشكلة ده بتحصل لما يبقي عندك ``repository`` علي الكمبيوتر وعملت ``repository`` علي ال ``github`` وفي ال ``repository`` اللي علي ``github`` عملت إنشاء لملف أو أضفت ملف ال ``readme`` فهنا بيحصل تعارض وأنت بتعمل ``push`` ل ``repository`` علشان نحل المشكلة ده بعمل pull الأول  أو ممكن المشكلة تحصل وأنت بتعمل ``rebase``
+
 ```bash
 git pull origin master --allow-unrelated-histories
 ```

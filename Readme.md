@@ -18,6 +18,7 @@
   - [Refusing to merge unrelated histories git pull](#refusing-to-merge-unrelated-histories)
   - [Permission denied public key](#permission-denied-public-key)
   - [Support for password authentication was removed](#support-for-password-authentication-was-removed)
+  - [Another git process seems to be running in this repository](Another-git-process-seems-to-be-running-in-this-repository)
 
 ## Introduction
 
@@ -465,3 +466,8 @@ The request URL returned error:403
 
 وتعمل إنشاء Generate new token وبعد ما تعملها إنشاء بتعملها نسخ وتحطها في شاشة تسجيل الدخول ال git 
 
+## Another git process seems to be running in this repository
+
+المشكلة ده بتحصل لما تبقي بتنفذ أمر معين في ال ``git`` وأنت عايز تنفذ أمر تاني في نفس الوقت أو الأمر يكون شغال في الخلفية ولسه مخلص فحل المشكلة ده أنت بتمسح ``index.lock`` الموجود بداخل مجلد ``.git``
+  ```bash
+rm -f .git/index.lock

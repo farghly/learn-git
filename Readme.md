@@ -18,7 +18,7 @@
   - [Refusing to merge unrelated histories git pull](#refusing-to-merge-unrelated-histories)
   - [Permission denied public key](#permission-denied-public-key)
   - [Support for password authentication was removed](#support-for-password-authentication-was-removed)
-  - [Another git process seems to be running in this repository](Another-git-process-seems-to-be-running-in-this-repository)
+  - [Another git process seems to be running in this repository](#another-git-process-seems-to-be-running-in-this-repository)
 
 ## Introduction
 
@@ -460,11 +460,11 @@ remote:please see https://github.blog/2020-12-15-token-authentication-requiremen
 fatal unable to access 'https://github.com/user/repo.git':
 The request URL returned error:403
 ```
-لأن ال github بيدعم أنك تسجل دخول personal access token وده تحل محل كلمة السر  علشان تعمل ال personal access token بتدخل علي موقع ال github ومن
+لأن ال ``github`` بيدعم أنك تسجل دخول ``personal access token`` وده تحل محل كلمة السر  علشان تعمل ال ``personal access token`` بتدخل علي موقع ال ``github`` ومن
 
 ``𝑺𝒆𝒕𝒕𝒊𝒏𝒈𝒔 -> 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑺𝒆𝒕𝒕𝒊𝒏𝒈𝒔 -> 𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒍 𝒂𝒄𝒄𝒆𝒔𝒔 𝒕𝒐𝒌𝒆𝒏``
 
-وتعمل إنشاء Generate new token وبعد ما تعملها إنشاء بتعملها نسخ وتحطها في شاشة تسجيل الدخول ال git 
+وتعمل إنشاء ``Generate new token`` وبعد ما تعملها إنشاء بتعملها نسخ وتحطها في شاشة تسجيل الدخول ال ``git`` 
 
 ## Another git process seems to be running in this repository
 

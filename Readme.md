@@ -19,6 +19,7 @@
   - [Permission denied public key](#permission-denied-public-key)
   - [Support for password authentication was removed](#support-for-password-authentication-was-removed)
   - [Another git process seems to be running in this repository](#another-git-process-seems-to-be-running-in-this-repository)
+  - [merge conflicts in a Git repository](#merge-conflicts-in-a-Git-repository)
 
 ## Introduction
 
@@ -471,3 +472,12 @@ The request URL returned error:403
 المشكلة ده بتحصل لما تبقي بتنفذ أمر معين في ال ``git`` وأنت عايز تنفذ أمر تاني في نفس الوقت أو الأمر يكون شغال في الخلفية ولسه مخلص فحل المشكلة ده أنت بتمسح ``index.lock`` الموجود بداخل مجلد ``.git``
   ```bash
 rm -f .git/index.lock
+```
+
+## merge conflicts in a Git repository
+
+المشكلة ده بتحصل لما تعمل دمج لاثنين branch علي سبيل المثال أنت عايز تعمل دمج ل branch ال master و branch ال develop حل المشكلة ده أنت تحل ال conflict بين الملفات شوف الرابط ده
+
+-	[merge conflicts in a Git repository]( https://stackoverflow.com/q/161813/5661396)
+
+

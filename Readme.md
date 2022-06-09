@@ -13,6 +13,7 @@
 - [Git reset](#git-reset)
 - [Git revert](#git-revert)
 - [Git stash](#git-stash)
+- [Git branch](#git-branch)
 - [SSH protocol](#SSH-protocol)
 - [Errors messages and how to solve it](#errors)
   - [Failed to push some refs](#failed-to-push-some-refs)
@@ -357,6 +358,28 @@ stash@{1}: WIP on master: eaf408c merge conflicts in a Git repository
 git stash apply stash@{0}
 ```
 ده كان بالنسبة لل ``git stash``
+
+## Git branch
+
+ال ``branch`` معناها الفرع زي الشجرة بالظبط فيه فرع رئيسي ومتفرع منه أكثر من فرع 
+
+عندنا في ال ``git`` فيه ``branch`` رئيسية ممكن أعمل التعديلات فيها مباشرة لو أنت عايز تعمل ``branch`` منفصلة عن ال ``branch`` الرئيسية بحيث التعديلات تأثر فقط في ال ``branch`` الفرعية
+```bash
+git branch New_branch
+```
+ ملحوظة ال``New_branch``  ممكن تكون اي اسم أن بديلك مثال علي سبيل المثال ممكن تسميها ``dev`` أوممكن تسميها ``fixed_branch`` طيب أنا عايز أفتح ال branch اللي أنا عملتها بنفذ الأمر التالي
+
+```bash
+git checkout New_branch
+```
+طيب أنا ممكن أختصر الأمرين السابقين بأمر واحد فقط أعمل إنشاء لل ``branch`` وأفتح ``branch``
+```bash
+git checkout –b New_branch
+```
+لو أنا عايز أشوف كل ال branches الموجودة بكتب 
+```bash
+git branch
+```
 
 ## SSH protocol
 **[لينك الفيديو](https://youtu.be/D9UZINTdvXU)** 

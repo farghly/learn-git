@@ -17,6 +17,7 @@
   - [Failed to push some refs](#failed-to-push-some-refs)
   - [Refusing to merge unrelated histories git pull](#refusing-to-merge-unrelated-histories)
   - [Permission denied public key](#permission-denied-public-key)
+  - [Support for password authentication was removed](#support-for-password-authentication-was-removed)
 
 ## Introduction
 
@@ -447,3 +448,20 @@ identityfile ~/.ssh/githubkey
 ```bash
 ssh –T git@github.com
 ```
+
+## Support for password authentication was removed
+
+لما تيجي تسجل دخول لل github من علي ال git بيظهر الرسالة ده
+```bash
+remote: Support for password authentication was removed on August 13,2021
+please use a personal access token instead.
+remote:please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
+fatal unable to access 'https://github.com/user/repo.git':
+The request URL returned error:403
+```
+لأن ال github بيدعم أنك تسجل دخول personal access token وده تحل محل كلمة السر  علشان تعمل ال personal access token بتدخل علي موقع ال github ومن
+
+``𝑺𝒆𝒕𝒕𝒊𝒏𝒈𝒔 -> 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑺𝒆𝒕𝒕𝒊𝒏𝒈𝒔 -> 𝑷𝒆𝒓𝒔𝒐𝒏𝒂𝒍 𝒂𝒄𝒄𝒆𝒔𝒔 𝒕𝒐𝒌𝒆𝒏``
+
+وتعمل إنشاء Generate new token وبعد ما تعملها إنشاء بتعملها نسخ وتحطها في شاشة تسجيل الدخول ال git 
+
